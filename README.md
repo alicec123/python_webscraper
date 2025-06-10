@@ -1,3 +1,5 @@
+### Yahoo Python Webscraper
+
 ## Overview
 
 This Python script scrapes stock data from Yahoo Finance for a ticker symbol, eg AAPL. The website is "https://finance.yahoo.com/quote/AAPL/", where the last 4 symbols indicate the ticker symbol. This is inputted by the user in the script. 
@@ -14,7 +16,7 @@ pip install requests beautifulsoup4
 
 ## Overview
 
-Scrapes stock data from Yahoo Finance for a user inputted ticker symbol, eg AAPL.
+Scrapes stock data from Yahoo Finance using a user-inputted ticker symbol, eg, AAPL.
 
 ## Prerequisites
 
