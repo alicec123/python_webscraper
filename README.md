@@ -1,4 +1,4 @@
-### Yahoo Python Webscraper
+# Yahoo Python Webscraper
 
 ## Overview
 
