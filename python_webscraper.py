@@ -20,9 +20,10 @@ def scrape_yahoo_finance(symbol):
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # Find the selectors (Yahoo Finance changes these frequently - so check again if it changes)
-        name = soup.find('h1', class_='D(ib) Fz(18px)') or soup.find('h1')
-        price = soup.find('fin-streamer', {'data-field': 'regularMarketPrice'}) or soup.find('span', class_='Fw(b)')
-        change = soup.find('fin-streamer', {'data-field': 'regularMarketChange'}) or soup.find('span', class_='C($positiveColor)')
+        name = soup.find('title')
+        price = soup.find('span', class_= "base    yf-ipw1h0") or soup.find('span', class_="price yf-15b2o7n")
+        # change = soup.find('span', class_="base  txt-positive  yf-ipw1h0", attrs={'data-testid': 'qsp-price-change-percent'})
+        change = soup.find('span', attrs={'data-testid': 'qsp-price-change-percent'})
         
         if not (name and price and change):
             print("Error: Could not find required data. Yahoo's HTML structure may have changed.")
@@ -65,7 +66,7 @@ def save_to_csv(data, filename="stock_data.csv"):
         writer.writerow(data)
 
 if __name__ == "__main__":
-    symbol = input("Enter stock symbol (e.g., AAPL): ").strip().upper()
+    symbol = input("Enter stock symbol (e.g., AAPL): ").strip().upper() # Convert to upper case
     stock_data = scrape_yahoo_finance(symbol)
     
     if stock_data:
