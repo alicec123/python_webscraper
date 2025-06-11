@@ -5,16 +5,16 @@
 This Python script scrapes stock data from Yahoo Finance for a ticker symbol, eg AAPL. The website is "https://finance.yahoo.com/quote/AAPL/", where the last 4 symbols indicate the ticker symbol. This is inputted by the user in the script. 
 
 **Example Tickers:**
-Apple Inc.: AAPL
-Microsoft Corporation: MSFT
-Amazon.com, Inc.: AMZN
-Meta (formerly Facebook) Inc.: META
-Alphabet Inc. (Google): GOOGL
-Tesla Motors: TSLA
-The Goldman Sachs Group, Inc.: GS
-Coca-Cola Company: KO
-International Business Machines: IBM
-Netflix Inc.: NFLX
+Apple Inc.: AAPL  
+Microsoft Corporation: MSFT  
+Amazon.com, Inc.: AMZN  
+Meta (formerly Facebook) Inc.: META  
+Alphabet Inc. (Google): GOOGL  
+Tesla Motors: TSLA  
+The Goldman Sachs Group, Inc.: GS  
+Coca-Cola Company: KO  
+International Business Machines: IBM  
+Netflix Inc.: NFLX  
 
 ## Prerequisites
 
