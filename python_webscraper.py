@@ -21,7 +21,7 @@ def scrape_yahoo_finance(symbol):
         
         # Find the selectors (Yahoo Finance changes these frequently - so check again if it changes)
         name = soup.find('title')
-        price = soup.find('span', class_= "base    yf-ipw1h0") or soup.find('span', class_="price yf-15b2o7n")
+        price = soup.find('span', class_= "base    yf-ipw1h0") or soup.find('span', class_="price yf-15b2o7n") or soup.find('span', attrs={'data-testid':'qsp-price'})
         # change = soup.find('span', class_="base  txt-positive  yf-ipw1h0", attrs={'data-testid': 'qsp-price-change-percent'})
         change = soup.find('span', attrs={'data-testid': 'qsp-price-change-percent'})
         
