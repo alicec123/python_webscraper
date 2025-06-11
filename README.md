@@ -53,13 +53,15 @@ symbol = input("Enter stock symbol (e.g., AAPL): ").strip().upper()
 
 The script currently outputs symbol, name, price, percent change, and the timestamp at which it was requested.   
 
+```python
 Scraped Stock Data:  
 symbol: VOO  
 name: Vanguard S&P 500 ETF (VOO) Stock Price, News, Quote & History - Yahoo Finance  
 price: 554.39  
 change: +(0.57%)  
-timestamp: 2025-06-11 13:34:36  
+timestamp: 2025-06-11 13:34:36
 
+```
 
 ### 3. Save to CSV File
 
