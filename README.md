@@ -51,8 +51,9 @@ symbol = input("Enter stock symbol (e.g., AAPL): ").strip().upper()
 
 ### 2. Outputs
 
-The script currently outputs symbol, name, price, percent change, and the timestamp at which it was requested.   
+The script currently outputs symbol, name, price, percent change, and the timestamp at which it was requested.  
 
+Example Output:  
 ```python
 Scraped Stock Data:  
 symbol: VOO  
@@ -85,7 +86,7 @@ Ensure compliance with Yahoo's terms of service and policies. Web scraping may b
 
 ## Customization
 
-Feel free to customize the script to meet your specific needs. Possible improvements include adding error handling, adjusting the time delay, or enhancing the user interface.
+Possible improvements include appending requests to the same CSV file, adding better error handling, adjusting the time delay, and enhancing the user interface.
 
 
 
