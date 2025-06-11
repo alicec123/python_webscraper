@@ -4,6 +4,18 @@
 
 This Python script scrapes stock data from Yahoo Finance for a ticker symbol, eg AAPL. The website is "https://finance.yahoo.com/quote/AAPL/", where the last 4 symbols indicate the ticker symbol. This is inputted by the user in the script. 
 
+**Example Tickers:**
+Apple Inc.: AAPL
+Microsoft Corporation: MSFT
+Amazon.com, Inc.: AMZN
+Meta (formerly Facebook) Inc.: META
+Alphabet Inc. (Google): GOOGL
+Tesla Motors: TSLA
+The Goldman Sachs Group, Inc.: GS
+Coca-Cola Company: KO
+International Business Machines: IBM
+Netflix Inc.: NFLX
+
 ## Prerequisites
 
 - Python 3.12.0
@@ -29,15 +41,6 @@ Install the required packages using:
 pip install requests beautifulsoup4
 ```
 
-## Important Note
-
-Ensure compliance with Yahoo's terms of service and policies. Web scraping may be subject to legal and ethical considerations.
-
-## Customization
-
-Feel free to customize the script to meet your specific needs. Possible improvements include adding error handling, adjusting the time delay, or enhancing the user interface.
-
-
 ### 1. Get User Input
 
 The script prompts the user to enter the name of the ticker they are interested in getting information for
@@ -61,3 +64,12 @@ def save_to_csv(data, filename="stock_data.csv"):
         writer.writeheader()
         writer.writerow(data)
 ```
+
+## Important Note
+
+Ensure compliance with Yahoo's terms of service and policies. Web scraping may be subject to legal and ethical considerations.
+
+## Customization
+
+Feel free to customize the script to meet your specific needs. Possible improvements include adding error handling, adjusting the time delay, or enhancing the user interface.
+
