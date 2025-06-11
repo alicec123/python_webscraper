@@ -4,7 +4,7 @@
 
 This Python script scrapes stock data from Yahoo Finance for a ticker symbol, eg AAPL. The website is "https://finance.yahoo.com/quote/AAPL/", where the last 4 symbols indicate the ticker symbol. This is inputted by the user in the script. 
 
-**Example Tickers:**
+**Example Tickers:**  
 Apple Inc.: AAPL  
 Microsoft Corporation: MSFT  
 Amazon.com, Inc.: AMZN  
@@ -72,4 +72,6 @@ Ensure compliance with Yahoo's terms of service and policies. Web scraping may b
 ## Customization
 
 Feel free to customize the script to meet your specific needs. Possible improvements include adding error handling, adjusting the time delay, or enhancing the user interface.
+
+
 
